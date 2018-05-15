@@ -1,10 +1,24 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
+<style>
+    .logo {
+        height: 90px;
+        display: block;
+        max-width: 100%;
+        max-height: 100%;
+        width: auto;
+        height: auto;
+    }
+    .centered-and-cropped {
+        object-fit: cover
+    }
+</style>
+<span class="bottom-donate-btn show-for-small-only"><a href="https://www.paypal.com/">DONATE NOW</a></span>
 <html>
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - HardinStrongRazor</title>
-
+    <title>@ViewData["Title"] - Hardin County Strong</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <environment include="Development">
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
         <link rel="stylesheet" href="~/css/site.css" />
@@ -13,11 +27,13 @@
         <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css"
               asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
               asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
-        <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
+        <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     </environment>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap-social.css" />
 </head>
+
 <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <nav class="navbar navbar-default navbar-fixed-top imp">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -26,13 +42,20 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a asp-page="/Index" class="navbar-brand">HardinStrongRazor</a>
+                <a asp-page="/Index" class="navbar-brand ninety"><img src="~/images/LogoMainSmall.png" alt="Hardin Strong" class="img-responsive logo"></a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li><a asp-page="/Index">Home</a></li>
                     <li><a asp-page="/About">About</a></li>
+
                     <li><a asp-page="/Contact">Contact</a></li>
+                    <li>
+                        <a href="https://www.paypal.com" class="btn donate-btn">Donate Now</a>
+                    </li>
+                    <li>
+                        <a asp-page="/Apply" class="btn apply-btn">Apply For Aid</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -40,8 +63,8 @@
     <div class="container body-content">
         @RenderBody()
         <hr />
-        <footer>
-            <p>&copy; 2017 - HardinStrongRazor</p>
+        <footer style="text-align: center">
+            <p>&copy; 2018 - Hardin County Strong</p>
         </footer>
     </div>
 

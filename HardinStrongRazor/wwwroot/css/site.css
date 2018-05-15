@@ -1,5 +1,5 @@
 body {
-    padding-top: 50px;
+    padding-top: 90px;
     padding-bottom: 20px;
 }
 
@@ -31,5 +31,149 @@ body {
     /* Hide captions */
     .carousel-caption {
         display: none;
+    }
+}
+.navbar-default {
+    background-color: #ffffff;
+    border-color: #000000;
+}
+
+    .navbar-default .navbar-brand {
+        color: #000000;
+    }
+
+        .navbar-default .navbar-brand:hover,
+        .navbar-default .navbar-brand:focus {
+            color: #a4020b;
+        }
+
+    .navbar-default .navbar-text {
+        color: #000000;
+    }
+
+    .navbar-default .navbar-nav > li > a {
+        color: #000000;
+    }
+
+        .navbar-default .navbar-nav > li > a:hover,
+        .navbar-default .navbar-nav > li > a:focus {
+            color: #a4020b;
+        }
+
+    .navbar-default .navbar-nav > .active > a,
+    .navbar-default .navbar-nav > .active > a:hover,
+    .navbar-default .navbar-nav > .active > a:focus {
+        color: #a4020b;
+        background-color: #000000;
+    }
+
+    .navbar-default .navbar-nav > .open > a,
+    .navbar-default .navbar-nav > .open > a:hover,
+    .navbar-default .navbar-nav > .open > a:focus {
+        color: #a4020b;
+        background-color: #000000;
+    }
+
+    .navbar-default .navbar-toggle {
+        border-color: #000000;
+    }
+
+        .navbar-default .navbar-toggle:hover,
+        .navbar-default .navbar-toggle:focus {
+            background-color: #000000;
+        }
+
+        .navbar-default .navbar-toggle .icon-bar {
+            background-color: #000000;
+        }
+
+    .navbar-default .navbar-collapse,
+    .navbar-default .navbar-form {
+        border-color: #000000;
+    }
+
+    .navbar-default .navbar-link {
+        color: #000000;
+    }
+
+        .navbar-default .navbar-link:hover {
+            color: #a4020b;
+        }
+
+@media (max-width: 767px) {
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        color: #000000;
+    }
+
+        .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+        .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+            color: #a4020b;
+        }
+
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+        color: #a4020b;
+        background-color: #000000;
+    }
+}
+.navbar-brand {
+    padding-top:2px;
+    padding-bottom:2px;
+}
+.navbar-nav li {
+    padding-top: 18px;
+    font-size: 17px;
+    height: 100%;
+    vertical-align: middle;
+    line-height: 100%;
+    align-items: center !important;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.ninety {
+    height:90px !important;
+}
+a.donate-btn {
+    background-color: #a4020b;
+    color: #fff;
+    font-size: 18px;
+    
+}
+a.apply-btn {
+    background-color: white;
+    color: black;
+    border-color: #a4020b;
+    font-size: 18px;
+    
+}
+span.bottom-donate-btn {
+    position: fixed;
+    bottom: 0
+}
+
+span.bottom-donate-btn a {
+        position: fixed;
+        z-index: 99999999;
+        background-color: #d72e2c;
+        padding: 10px 20px;
+        font-family: questrial,serif;
+        bottom: 0;
+        text-align: center;
+        color: #fff !important;
+        font-size: 1rem;
+        width: 50%;
+        left: 50%;
+        margin-left: -25%;
+        background-position: center;
+    }
+
+.imp {
+    vertical-align: middle !important;  
+}
+@media screen and (min-width:768px) {
+    .show-for-small-only {
+        display: none !important
     }
 }

@@ -1,19 +1,26 @@
 ﻿@page
 @model ContactModel
 @{
-    ViewData["Title"] = "Contact";
+    ViewData["Title"] = "Contact Us";
 }
 <h2>@ViewData["Title"]</h2>
 <h3>@Model.Message</h3>
 
 <address>
-    One Microsoft Way<br />
-    Redmond, WA 98052-6399<br />
+    Hardin Strong<br />
+    300 W Monroe St<br />
+    Kountze, TX 77625<br />
     <abbr title="Phone">P:</abbr>
-    425.555.0100
+    409-209-5400
 </address>
+<br />
 
+<div style="width: 200px;">
+    <a class="btn btn-block btn-social btn-facebook" href="https://www.facebook.com/hardincountystrong">
+        <span class="fab fa-facebook-f"></span> Like us on Facebook
+    </a>
+</div>
+<br />
 <address>
-    <strong>Support:</strong> <a href="mailto:Support@example.com">Support@example.com</a><br />
-    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
+    <strong>Email:</strong> <a href="mailto:Admin@HardinCountyStrong.org">Admin@HardinCountyStrong.org</a>
 </address>
