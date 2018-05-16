@@ -4,5 +4,74 @@
     ViewData["Title"] = "Apply";
 }
 
-<h2>Apply</h2>
+<h2>Apply For Aid</h2>
+<form role="form" data-toggle="validator" method="post">
+    <div style="color: red;" asp-validation-summary="All"></div>
+    <div class="row">
+        <div class="form-group col-md-6">
+            <label asp-for="Apply.Email">Email address</label>
+            <input type="email" class="form-control" asp-for="Apply.Email" placeholder="name@example.com">
+        </div>
+    </div>
+    <div class="row">
+        <div class="form-group col-md-6">
+            <input type="email" class="form-control" asp-for="Apply.EmailConfirm" data-match="#inputEmail" data-match-error="Whoops, these don't match" placeholder="Confirm" required>
+            <div class="help-block with-errors"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="form-group col-md-6">
+            <label asp-for="Apply.FirstName">First Name</label>
+            <input type="text" class="form-control" asp-for="Apply.FirstName" placeholder="">
+        </div>
+    </div>
+    <div class="row">
+        <div class="form-group col-md-6">
+            <label asp-for="Apply.LastName">Last Name</label>
+            <input type="text" class="form-control" asp-for="Apply.LastName" placeholder="">
+        </div>
+    </div>
+    <div class="row">
+        <div class="form-group col-md-6">
+            <label asp-for="Apply.Address">Address</label>
+            <input type="text" class="form-control" asp-for="Apply.Address">
+        </div>
+    </div>
+    <div class="row">
+        <div class="form-group col-md-6">
+            <label asp-for="Apply.Address2">Address 2</label>
+            <input type="text" class="form-control" asp-for="Apply.Address2">
+        </div>
+    </div>
+    <div class="row">
+        <div class="form-group col-md-6">
+            <label asp-for="Apply.City">City</label>
+            <input type="text" class="form-control" asp-for="Apply.City">
+        </div>
+        <div class="form-group col-md-2">
+            <label asp-for="Apply.State">State</label>
+            <input type="text" class="form-control" asp-for="Apply.State">
+        </div>
+        <div class="form-group col-md-3">
+            <label asp-for="Apply.Zip">Zip</label>
+            <input type="text" class="form-control" asp-for="Apply.Zip">
+        </div>
+    </div>
+    <div class="row">
+        <div class="form-group col-md-6">
+            <label asp-for="Apply.Phone">Phone</label>
+            <input type="text" class="form-control" asp-for="Apply.Phone">
+        </div>
+        <div class="form-group col-md-6">
+            <label asp-for="Apply.Phone2">Alt Phone</label>
+            <input type="text" class="form-control" asp-for="Apply.Phone2">
+        </div>
+    </div>
+    <div class="form-group">
+        <label asp-for="Apply.Message">How can we help you?</label>
+        <textarea class="form-control" asp-for="Apply.Message" rows="3"></textarea>
+    </div>
+    <button type="submit" class="btn btn-default donate-btn">Submit</button>
+</form>
+
 
